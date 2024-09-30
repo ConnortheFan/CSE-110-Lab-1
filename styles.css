@@ -5,6 +5,7 @@
 #S2 {
     background-image: url("assets/bg-orbs-1.jpg");
     background-size: contain;
+    color: white;
 }
 
 #S3 {
@@ -20,6 +21,11 @@
 .Section p {
     font-size: 28px;
     display: inline-block;
+    margin: 10px;
+}
+
+.Section h2 {
+    margin: 15px
 }
 
 #navbar {
@@ -72,4 +78,28 @@
     overflow: scroll;
     text-align: center;
     align-content: center;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (width < 800px) {
+    menu {
+        display: none;
+    }
+    #UCSDLogo {
+        max-width: 75%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
